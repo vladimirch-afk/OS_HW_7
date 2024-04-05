@@ -60,7 +60,7 @@ int main() {
     srand(getpid());
     while (1) {
         sleep(1); // Подождать 1 секунду перед генерацией числа
-        shared_mem->number = rand() % 100; // Генерация числа от 0 до 99
+        shared_mem->number = rand() % 1000; // Генерация числа от 0 до 999
         printf("Sent: %d\n", shared_mem->number);
     }
     return 0;
