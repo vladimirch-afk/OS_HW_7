@@ -55,7 +55,7 @@ int main() {
 
     while (1) {
         sleep(1); // Подождать 1 секунду перед генерацией числа
-        shared_d->number = rand() % 100; // Генерация числа от 0 до 99
+        shared_d->number = rand() % 1000; // Генерация числа от 0 до 999
         printf("Sent: %d\n", shared_d->number);
         // Завершаем работу, если флаг равен 1
         if (shared_d->flag == 1) {
